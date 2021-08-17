@@ -1,0 +1,159 @@
+<!-- 278 -->
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-compatible"  content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, inital-scale=1.0">
+    </head>
+
+    <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            h3 {
+                color: #ffffff;
+                font-size: 20px;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-size: 30px;
+            }
+
+            .mainContainer {
+                height: 100vh;
+                display: grid;
+                grid-template-columns: 1fr 0.5fr 1.5fr 1fr 1fr 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                grid-gap: 5px;
+                grid-template-areas: 
+                "a b b c c d"
+                "e b b c c f"
+                "g h i c c j"
+                "k k k c c l";
+                border: 5px solid #ffffff;
+            }
+
+            #a{
+                background-color: #C9316B;
+                text-align: center;
+                grid-area: a;
+            }
+
+            #b {
+                background-color: #CA319D;
+                text-align: center;
+                grid-area: b;
+            }
+
+            #c {
+                background-color: #ED6E62;
+                text-align: center;
+                grid-area: c;
+            }
+
+            #d {
+                background-color: #EFC437; 
+                text-align: center; 
+                grid-area: d;
+            }
+
+            #e {
+                background-color: #538C45; 
+                text-align: center; 
+                grid-area: e;
+            }
+
+            #f {
+                background-color: #267C87; 
+                text-align: center;
+                grid-area: f;
+            }
+
+            #g {
+                background-color: #799928; 
+                text-align: center;
+                grid-area: g;
+            }
+
+            #h {
+                background-color: #478755; 
+                text-align: center;
+                grid-area: h;
+            }
+
+            #i {
+                background-color: #30C9C2; 
+                text-align: center;
+                grid-area: i;
+            }
+
+            #j {
+                background-color: #31C98F; 
+                text-align: center;
+                grid-area: j;
+            }
+
+            #k {
+                background-color: #544079;
+                text-align: center;
+                grid-area: k;
+            }
+
+            #l {
+                background-color: #DE212F; 
+                text-align: center;
+                grid-area: l;
+            }
+
+            @media only screen and (max-width: 500px) {
+            .mainContainer {
+                grid-template-columns: 1fr;
+                grid-template-rows:  repeat(6, 1fr);
+                grid-template-areas: 
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+                "h"
+                "i"
+                "j"
+                "k"
+                "l";
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class = "mainContainer">
+            <div id = "a"><h3>1</h3></div>
+            <div id = "b"><h3>2</h3></div>
+            <div id = "c"><h1>CSS GRID LAYOUT</h1></div>
+            <div id = "d"><h3>4</h3></div>                
+            <div id = "e"><h3>5</h3></div>
+            <div id = "f"><h3>6</h3></div>
+            <div id = "g"><h3>7</h3></div>
+            <div id = "h"><h3>8</h3></div>
+            <div id = "i"><h3>9</h3></div>
+            <div id = "j"><h3>10</h3></div>
+            <div id = "k"><h3>11</h3></div>
+            <div id = "l"><h3>12</h3></div>     
+        </div>
+    </body>
+
+</html>
